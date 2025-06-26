@@ -40,12 +40,14 @@ using (var scope = app.Services.CreateScope())
 }
 
 // Pipeline
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-    app.MapOpenApi();
-}
+//if (app.Environment.IsDevelopment())
+//{
+    
+//}
+
+app.UseSwagger();
+app.UseSwaggerUI();
+app.MapOpenApi();
 
 app.UseHttpsRedirection();
 
