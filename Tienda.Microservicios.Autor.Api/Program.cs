@@ -14,7 +14,10 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("CorsPolicy", policy =>
     {
-        policy.WithOrigins("http://localhost:3001")
+        policy.WithOrigins(
+            "http://localhost:3001",
+            "https://libreria-ashen.vercel.app"
+            )
               .AllowAnyMethod()
               .AllowAnyHeader();
     });
